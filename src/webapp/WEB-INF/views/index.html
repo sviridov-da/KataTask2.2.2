@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Index</title>
 </head>
 <body>
 <div>
@@ -11,5 +11,10 @@
         <h1 th:text="${msg}"></h1>
     </th:block>
 </div>
+<a href="/cars">All cars</a><br>
+<a href="/cars?count=0">0 cars</a><br>
+<a href="/cars?count=3">3 cars</a><br>
+<a href="/cars?count=-1">-1 cars</a><br>
+<a href="/cars?count=100">100 cars</a><br>
 </body>
 </html>
