@@ -12,7 +12,7 @@ import web.services.CarServiceImpl;
 @Controller
 public class CarsController {
     @Autowired
-    CarService carService;
+    private CarService carService;
     @GetMapping("/cars")
     public String showCars(@RequestParam(value = "count", required = false) Integer count, Model model){
         if(count==null){

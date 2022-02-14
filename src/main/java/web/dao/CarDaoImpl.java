@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarDaoImpl implements CarDao{
-    List<Car> cars;
+    private List<Car> cars;
     {
         cars = new ArrayList<>();
         cars.add(new Car("Car1", 101, 2001));
@@ -20,11 +20,4 @@ public class CarDaoImpl implements CarDao{
         return cars;
     }
 
-    @Override
-    public List<Car> getCars(int count) {
-        if(count<0 || count>cars.size()){
-            return cars;
-        }
-        return cars.subList(0,count);
-    }
 }
